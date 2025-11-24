@@ -7,8 +7,11 @@ This project identifies whether a person is wearing a mask correctly, incorrectl
 Repository Structure
 FaceMaskDetection/
 ├── annotations/ # XML annotation files (Pascal VOC format)
+
 ├── images/ # Training & validation images
+
 ├── labels/ # YOLO-format label files (.txt)
+
 ├── runs/ # YOLOv8 training outputs (plots, weights, results)
 ├── mask.yaml # Dataset configuration file
 ├── yolov8n.pt # Pretrained YOLOv8n model used for training
