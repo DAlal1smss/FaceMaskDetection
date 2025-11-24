@@ -1,13 +1,14 @@
-FaceMaskDetection
-
+**FaceMaskDetection
+**
 A YOLOv8-based deep learning model for detecting three classes of face mask usage: with_mask, without_mask, and mask_weared_incorrect. The model was trained on a labeled dataset of face images and optimized for object detection tasks.
 
-Project Overview
-
+**Project Overview
+**
 This project identifies whether a person is wearing a mask correctly, incorrectly, or not wearing a mask. The model is trained using the YOLOv8 architecture on a dataset containing 4,072 labeled instances.
 
-Repository Structure
 
+**Repository Structure
+**
 FaceMaskDetection/
 
 ├── annotations/ # XML annotation files (Pascal VOC format)
@@ -30,7 +31,7 @@ FaceMaskDetection/
 
 └── README.md # Project documentation
 
-Installation
+**Installation**
 
 1. Clone the repository:
 
@@ -42,8 +43,8 @@ Installation
    
    pip install lxml
 
-Dataset Preparation
-
+**Dataset Preparation
+**
 The dataset used in this project is the Face Mask Detection dataset downloaded from Kaggle.
 
 It contains 853 images belonging to three classes: with_mask, without_mask, mask_weared_incorrect.
@@ -62,7 +63,9 @@ mask.yaml      # Dataset configuration file for YOLOv8
 
 This structure is required for YOLOv8 training.
 
-Training Command
+**Training Command
+**
+
 from ultralytics import YOLO
 
 model = YOLO("yolov8n.pt")
@@ -77,23 +80,25 @@ model.train(
     batch=16
 )
 
-Example Inference
-
+**Example Inference
+**
 from ultralytics import YOLO
 
 model = YOLO("runs/detect/train2/weights/best.pt")
 
 model.predict(source="try.jpg")
 
-How to Run the Model
 
+**How to Run the Model
+**
 from ultralytics import YOLO
 
 model = YOLO("runs/detect/train2/weights/best.pt")
 
 results = model.predict(source="path_to_image.jpg")
 
-Results
+**Results**
+
 The model was trained for 20 epochs using YOLOv8n.
 
 Key performance outcomes include:
