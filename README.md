@@ -1,5 +1,4 @@
-**FaceMaskDetection
-**
+**FaceMaskDetection**
 A YOLOv8-based deep learning model for detecting three classes of face mask usage: with_mask, without_mask, and mask_weared_incorrect. The model was trained on a labeled dataset of face images and optimized for object detection tasks.
 
 **Project Overview
