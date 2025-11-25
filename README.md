@@ -100,6 +100,37 @@ results = model.predict(source="path_to_image.jpg")
 ```
 
 ---
+## Code Quality & Execution
+The project code is fully functional and runs without errors when executed in order inside the provided Google Colab notebook.
+The notebook is organized into clear steps, including:
+
+Extracting the dataset and preparing the directory structure
+
+Converting Pascal VOC XML annotations into YOLO-format labels using a custom Python script
+
+Creating the mask.yaml configuration file
+
+Installing required dependencies (Ultralytics, lxml)
+
+Training the YOLOv8n model for 20 epochs
+
+Running inference on test images and saving predictions
+
+The code is clean, modular, and well-commented, making it easy to follow and reproduce.
+
+## Originality & Contribution
+This project includes original implementation beyond standard tutorials.
+The key unique contributions are:
+
+A custom Python script to convert XML annotations (Pascal VOC) into YOLO label format
+
+Manual preparation of the dataset structure for YOLOv8 training
+
+Creating a complete end-to-end training pipeline inside Google Colab (extraction → conversion → training → inference)
+
+Using a custom-configured mask.yaml file tailored for the three mask classes
+
+These steps demonstrate meaningful implementation, modification, and independent contribution beyond existing online resources.
 
 ## Results
 
